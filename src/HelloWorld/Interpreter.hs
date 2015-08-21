@@ -22,7 +22,7 @@ parseExpr :: Parser HelloVal
 parseExpr = parseGreeting
 
 readExpr :: String -> ThrowsError HelloVal
-readExpr input = case parse parseExpr "lisp" input of
+readExpr input = case parse parseExpr "your face" input of
     Left err -> throwError $ Parser err
     Right val -> return val
 
