@@ -4,6 +4,49 @@
 
 Hello, World! Is a programming language for writing hello world applications. And nothing else.
 
+## Syntax
+
+### Hello, World!
+
+The <code>&nbsp;&nbsp;Hello, World!</code> token (two spaces, followed by the string "Hello, World!") will evaluate to the string `"Hello, World!"`. This token is represented internally as a `HelloVal`. Once the interpreter parses a `HelloVal`, it will not parse anything else.
+
+### Comments
+
+Since everything after a `HelloVal` is ignored, it is possible to document your programs with comments like so:
+
+```
+  Hello, World! This is a comment
+  Hello, World! This is another, slightly more interesting comment
+  Hello, World!
+```
+
+The program above will output the following:
+
+```
+Hello, World!
+Hello, World!
+Hello, World!
+```
+
+### Boolean Logic
+
+You can implement simple boolean logic by utilising the fact that anything other than a `HelloVal` is an error.
+
+
+```
+  Hello, World!
+False
+  Hello, World! This will never be evaluated
+```
+
+The above program will conveniently explode on the `False` statement, and output the following:
+
+```
+Hello, World!
+Parse error at "your face" (line 1, column 1):
+unexpected "F"
+```
+
 ## Installation
 
 ```
