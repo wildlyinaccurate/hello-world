@@ -25,6 +25,7 @@ install:
   - cabal --version
   - ghc --version
   - travis_retry cabal update
+  - cabal install --only-dependencies --enable-tests
 
 script:
   - cabal configure --enable-tests -v2
